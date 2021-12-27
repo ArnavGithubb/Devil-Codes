@@ -1,2 +1,3 @@
 # Devil-Codes
-I am Arnav Singh .I am a Student at chandigarh university .I am Learning c/c++ language currently and here are my small projects
+I am Arnav Singh .I am a beginner .I am Learning c/c++ language currently and whatever idea come to my mind i made and publish here.If like it stay tuned 
+😁✌👍
