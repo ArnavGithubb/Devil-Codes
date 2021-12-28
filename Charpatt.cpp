@@ -1,5 +1,7 @@
 
 
+
+
 #include <iostream>
 using namespace std;
 
@@ -20,6 +22,8 @@ int main()
     std::cout << "b-->for spaced box pattern " << std::endl;
     std::cout << "c-->for inverted pyramid pattern" << std::endl;
     std::cout << "d--> for half pyramid after 180 rotation pattern" << std::endl;
+    std::cout << "e--> for ButterFly pattern" << std::endl;
+    std::cout << "f--> for rhombus pattern" << std::endl;
     cin>>s;
     switch(s){
         case 'a':
@@ -66,42 +70,54 @@ int main()
                             cout<<endl;
                         }
                         break;
-         case 'e':
+        case 'e':
 
-                     for (int i = 1; i <= row; i++){
+                        for (int i = 1; i <= row; i++){
 	                            for (int j = 1; j <= i; j++){
-	                              std::cout << p;
+	                                    std::cout << p;
 
-	                             }
-                            	  int space = 2 * row - 2 * i;
-                                   for (int j = 1; j <= space;j++){
-                            	      cout << " ";
-                                 }
-                                 for (int j = 1; j <= i; j++){
-                            	       cout << p;
-                                  }
+	                            }
+                            	int space = 2 * row - 2 * i;
+                                for (int j = 1; j <= space;j++){
+                            	             cout << " ";
+                                } 
+                                for (int j = 1; j <= i; j++){
+                            	             cout << p;
+                                }
                             
-                                   cout << endl;
-                               }
-                                  for (int i = row; i >= 1; i--){
-                            	            for (int j = 1; j <= i; j++){
+                                cout << endl;
+                                }
+                                for (int i = row; i >= 1; i--){
+                            	       for (int j = 1; j <= i; j++){
                             	              cout << p;
                             	    }
 
 	                                int space = 2 * row - 2 * i;
 	                                for (int j = 1; j <= space; j++){
-                            	      cout << " ";
+                            	              cout << " ";
                             
                             	    }
                                 	for (int j = 1; j <= i; j++){
                                 	      cout << p;
-                                	    }
-	                                    cout << endl;
-	                                  }
+                                	}
+	                                      cout << endl;
+	                                }
                                        break;
-                                }
-                              
-
+                               
+            
+        case 'f':
+                        for(int i=1;i<=row;i++){
+                                 for(int j=1;j<=row+1-i;j++){
+                                      std::cout << " ";
+            
+                            }
+                            for(int j=1;j<=row;j++){
+                                     cout<<"*";
+                            }
+                            cout<<endl;
+                            }   
+                            break;
+    }    
     
     return 0;
 }
